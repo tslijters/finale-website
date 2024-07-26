@@ -8,16 +8,6 @@
 </head>
 <body>
     <div id="root"></div>
-    <script>
-        // Load the React app from the local server
-        fetch('http://localhost:3000/static/js/bundle.js')
-            .then(response => response.text())
-            .then(scriptContent => {
-                const script = document.createElement('script');
-                script.type = 'text/javascript';
-                script.innerHTML = scriptContent;
-                document.body.appendChild(script);
-            });
-    </script>
+    <script src="https://tslijters.github.io/finale-website/static/js/main.js"></script>
 </body>
 </html>
