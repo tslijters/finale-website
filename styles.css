@@ -1,0 +1,475 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff4e1; /* Background color */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-size: 14px; /* Default font size for mobile */
+}
+
+header {
+  background-color: #ff6600; /* Header background color */
+  color: white; /* Header text color */
+  padding: 10px 0; /* Header padding */
+  text-align: center;
+}
+
+header h1 {
+  color: white; /* Header h1 text color */
+  margin: 0;
+  font-size: 20px; /* Font size for mobile */
+}
+
+header p {
+  color: white; /* Header p text color */
+  margin: 5px 0;
+  font-size: 14px; /* Font size for mobile */
+}
+
+header a {
+  color: white; /* Header link color */
+  text-decoration: none;
+}
+
+nav {
+  background-color: #cc5200; /* Navigation background color */
+  display: flex;
+  justify-content: center; /* Center menu horizontally */
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column; /* Stack menu items vertically */
+  align-items: center; /* Center items horizontally */
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+  font-size: 16px; /* Font size for mobile */
+}
+
+/* Mobile layout for main content */
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+#left-column,
+#right-column {
+  width: 100%;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+#left-column {
+  background-color: #d2b48c; /* Taupe background */
+}
+
+#left-column img,
+#right-column img,
+.profile img,
+section img {
+  max-width: 100%;
+  height: auto;
+}
+
+.profile {
+  overflow: hidden; /* Contain floating elements */
+}
+
+.float-right {
+  float: right;
+  margin-left: 20px;
+}
+
+.left-image-inline {
+  float: left;
+  margin-right: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#map {
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+#map iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 300px; /* Minimum height for iframe on mobile */
+  border: 0;
+  flex-grow: 1; /* Allow iframe to grow and fill space */
+}
+
+form {
+  flex: 1;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+  font-size: 14px; /* Font size for mobile */
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px; /* Font size for mobile */
+}
+
+button {
+  background-color: #d35400;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px; /* Font size for mobile */
+}
+
+button:hover {
+  background-color: #e67e22;
+}
+
+footer {
+  background-color: #ff6600; /* Footer background color */
+  color: white; /* Footer text color */
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+  margin-top: 20px;
+  font-weight: bold; /* Footer text bold */
+}
+
+h1, h2, h3, p {
+  color: #333;
+}
+
+h2 {
+  border-bottom: 2px solid #ff6600;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  font-size: 18px; /* Font size for mobile */
+}
+
+h3 {
+  color: #ff6600;
+  margin-top: 20px;
+  font-size: 16px; /* Font size for mobile */
+}
+
+/* Medium screens */
+@media (min-width: 600px) {
+  nav ul {
+    flex-direction: row; /* Align menu items horizontally */
+    align-items: center; /* Center items vertically */
+  }
+
+  nav ul li {
+    margin: 0 10px; /* Add horizontal spacing between items */
+  }
+
+  main {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #left-column,
+  #right-column {
+    width: 45%;
+    margin-bottom: 0;
+  }
+
+  #map iframe {
+    min-height: 400px; /* Minimum height for larger screens */
+  }
+
+  h1 {
+    font-size: 22px; /* Increase font size for larger screens */
+  }
+
+  h2 {
+    font-size: 20px; /* Increase font size for larger screens */
+  }
+
+  h3 {
+    font-size: 18px; /* Increase font size for larger screens */
+  }
+
+  p {
+    font-size: 16px; /* Increase font size for larger screens */
+  }
+}
+
+/* Large screens */
+@media (min-width: 992px) {
+  body {
+    font-size: 16px; /* Increase base font size for large screens */
+  }
+
+  h1 {
+    font-size: 24px; /* Larger font size for headings */
+  }
+
+  h2 {
+    font-size: 22px; /* Larger font size for sub-headings */
+  }
+
+  h3 {
+    font-size: 20px; /* Larger font size for smaller headings */
+  }
+
+  p {
+    font-size: 18px; /* Larger font size for paragraphs */
+  }
+
+  main {
+    padding-top: 30px; /* Add spacing for larger screens */
+    padding-bottom: 30px; /* Add spacing for larger screens */
+  }
+
+  #left-column {
+    width: 30%;
+  }
+
+  #right-column {
+    width: 65%;
+  }
+
+  #map iframe {
+    min-height: 600px; /* Minimum height for iframe on large screens */
+  }
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: #333;
+}
+
+header {
+  background-color: #ff6600;
+  color: white;
+  padding: 15px 0;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  color: white;
+  margin: 0;
+  font-size: 2rem;
+}
+
+header p {
+  color: white;
+  margin: 5px 0;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+}
+
+nav {
+  background-color: #cc5200;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 15px 20px;
+  display: block;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #e67e22;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+#articles, #overview-articles, #article-detail {
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+article {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+article:hover {
+  transform: translateY(-5px);
+}
+
+#manage-form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+input, textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s;
+}
+
+input:focus, textarea:focus {
+  border-color: #ff6600;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #e65c00;
+}
+
+footer {
+  background-color: #ff6600;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 1200px) {
+  #articles, #overview-articles, #article-detail {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  header, nav, footer {
+    text-align: center;
+    padding: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li a {
+    padding: 10px;
+  }
+
+  main {
+    padding: 15px;
+  }
+
+  article {
+    padding: 15px;
+  }
+
+  #manage-form {
+    padding: 15px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  nav ul li a {
+    font-size: 0.9rem;
+  }
+
+  article {
+    padding: 10px;
+  }
+
+  input, textarea, button {
+    font-size: 0.9rem;
+  }
+
+  button {
+    padding: 8px 10px;
+  }
+}
+
+/* Ensure images and iframes are responsive */
+img, iframe {
+  max-width: 100%;
+  height: auto;
+}
