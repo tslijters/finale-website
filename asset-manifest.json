@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/finale-website/static/css/main.648a3adc.css",
-    "main.js": "/finale-website/static/js/main.4afc564c.js",
+    "main.js": "/finale-website/static/js/main.ad77f134.js",
     "static/js/453.dda8de54.chunk.js": "/finale-website/static/js/453.dda8de54.chunk.js",
     "index.html": "/finale-website/index.html",
     "main.648a3adc.css.map": "/finale-website/static/css/main.648a3adc.css.map",
-    "main.4afc564c.js.map": "/finale-website/static/js/main.4afc564c.js.map",
+    "main.ad77f134.js.map": "/finale-website/static/js/main.ad77f134.js.map",
     "453.dda8de54.chunk.js.map": "/finale-website/static/js/453.dda8de54.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.648a3adc.css",
-    "static/js/main.4afc564c.js"
+    "static/js/main.ad77f134.js"
   ]
 }
