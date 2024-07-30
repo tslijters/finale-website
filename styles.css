@@ -17,6 +17,7 @@ header {
   padding: 10px 0; /* Header padding */
   text-align: center; /* Center align header content */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 0; /* Ensure no space below header */
 }
 
 header h1 {
@@ -39,6 +40,7 @@ header a {
 nav {
   background-color: #cc5200; /* Navigation background color */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 0; /* Ensure no space below nav */
 }
 
 nav ul {
@@ -74,6 +76,7 @@ main {
   display: flex;
   flex-direction: column; /* Mobile layout for main content */
   text-align: center; /* Center align main content */
+  margin: 0; /* Ensure no space around main */
 }
 
 #left-column,
@@ -162,7 +165,7 @@ footer {
   text-align: center;
   padding: 10px 0;
   width: 100%;
-  margin-top: 20px;
+  margin: 0; /* Ensure no space around footer */
   font-weight: bold; /* Footer text bold */
   box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
 }
