@@ -8,13 +8,14 @@ body {
   min-height: 100vh;
   font-size: 14px; /* Default font size for mobile */
   color: #333;
+  text-align: center; /* Center align body content */
 }
 
 header {
   background-color: #ff6600; /* Header background color */
   color: white; /* Header text color */
   padding: 10px 0; /* Header padding */
-  text-align: center;
+  text-align: center; /* Center align header content */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -72,6 +73,7 @@ main {
   padding: 20px;
   display: flex;
   flex-direction: column; /* Mobile layout for main content */
+  text-align: center; /* Center align main content */
 }
 
 #left-column,
